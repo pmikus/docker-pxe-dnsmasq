@@ -1,0 +1,9 @@
+DEFAULT Install_Ubuntu
+PROMPT 0
+MENU TITLE PXE DNSMASQ
+TIMEOUT 1
+
+LABEL Install_Ubuntu
+        kernel ubuntu-installer/amd64/linux
+        append initrd=ubuntu-installer/amd64/initrd.gz ksdevice=bootif interface=eno1 hostname=hostname1 netcfg/get_ipaddress=10.0.0.2 netcfg/get_gateway=10.0.0.2 text auto-install/enable=true priority=critical url=tftp://10.0.0.1/ubuntu-installer/amd64/no_raid.seed
+        ipappend 2
