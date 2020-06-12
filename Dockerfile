@@ -1,4 +1,4 @@
-# Copyright (c) 2020 Cisco and/or its affiliates.
+# Copyright (c) 2020 Peter Mikus and/or its affiliates.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at:
@@ -13,8 +13,8 @@
 
 FROM alpine
 
-MAINTAINER csit-dev <csit-dev@lists.fd.io>
-LABEL Description="FDIO PXE service image."
+MAINTAINER Peter Mikus <@peter.mikus>
+LABEL Description="PXE service image."
 LABEL Version="1.0"
 
 RUN apk add --update-cache dnsmasq p7zip wget \
