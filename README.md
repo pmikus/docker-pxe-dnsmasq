@@ -2,7 +2,7 @@
 
 PXE service Docker container based on dnsmasq network service.
 
-# Clenaup
+# Cleanup
 
 ```
 docker rm --force pxe-dnsmasq
