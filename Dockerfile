@@ -17,7 +17,7 @@ MAINTAINER Peter Mikus <@peter.mikus>
 LABEL Description="PXE service image."
 LABEL Version="1.0"
 
-RUN apk add --update-cache dnsmasq p7zip wget \
+RUN apk add --update-cache dnsmasq wget \
  && rm -rf /var/cache/apk/* \
  && mkdir -p /var/lib/tftpboot
 
