@@ -29,6 +29,7 @@ RUN wget http://ports.ubuntu.com/ubuntu-ports/dists/bionic-updates/main/installe
  && wget http://archive.ubuntu.com/ubuntu/dists/bionic-updates/main/installer-amd64/current/images/netboot/netboot.tar.gz -P / \
  && mkdir -p /var/lib/tftpboot/ubuntu-installer/ \
  && tar -zxvf /netboot.tar.gz --strip-components=2 -C /var/lib/tftpboot/ubuntu-installer/ \
+ && cp /var/lib/tftpboot/ubuntu-installer/amd64/boot-screens/l* /var/lib/tftpboot/ubuntu-installer/amd64/ \
  && rm -rf /netboot.tar.gz
 
 # Configure PXE.
